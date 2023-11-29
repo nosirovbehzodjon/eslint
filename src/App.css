@@ -1,0 +1,117 @@
+/* stylelint-disable */
+:root {
+  --primay: #000;
+  --bg-primay: #fff;
+  --link: #2a0b0b;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+.App {
+  min-height: 100vh;
+  position: relative;
+}
+
+.App-header {
+  background-color: #fff;
+  box-shadow: 0 1px 4px 0 rgba(44, 68, 122, 0.12);
+  display: flex;
+  padding: 1rem 0;
+  top: 0;
+  z-index: 100;
+}
+
+.App-header > a {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.App-container {
+  margin: 3.5rem 2rem;
+  padding: 24px;
+}
+
+.App-footer {
+  background-color: #fff;
+  bottom: 0;
+  padding: 1rem 0;
+  text-align: center;
+  z-index: 100;
+}
+
+header.App-header,
+footer.App-footer {
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+
+header.App-header > a {
+  color: #353535;
+  text-decoration: none;
+}
+
+header.App-header > a:hover,
+header.App-header > a.active,
+footer.App-footer > a:hover,
+footer.App-footer > a.active {
+  color: #845ec2;
+  text-decoration: underline;
+}
+
+/* Home */
+.home {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.home .home-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home .home-logo {
+    animation: home-logo-spin infinite 20s linear;
+  }
+}
+@keyframes home-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.home .home-title {
+  font-size: 2rem;
+}
+
+.home .home-content {
+  font-size: 0.9rem;
+  margin: 20px 0 10px;
+}
+
+.home .home-content .home-link {
+  color: #61dafb;
+  color: var(--link);
+}
+
+.home .home-content button {
+  background: #845ec2;
+  border-width: 0;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: calc(10px + 2vmin);
+  outline: none;
+  padding: 10px 35px;
+}
